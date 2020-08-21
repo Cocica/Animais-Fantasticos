@@ -2,16 +2,19 @@
 <html lang="pt_BR">
   <head>
     <meta charset="UTF-8" />
+    <title>Animais Fantásticos</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap"
       rel="stylesheet"
     />
+    <script>
+      document.documentElement.className += " js";
+    </script>
     <link rel="stylesheet" type="text/css" href="./style.css" />
-    <title>Animais Fantastico</title>
   </head>
   <body>
-    <nav class="menu">
+    <nav class="menu js-menu">
       <ul>
         <li><a href="#animais">Animais</a></li>
         <li><a href="#faq">Faq</a></li>
@@ -19,9 +22,9 @@
         <li><a href="https://www.linkedin.com/in/alissonox/">Dev →</a></li>
       </ul>
     </nav>
-    <section class="grid-section animais" id="animais">
+    <section class="grid-section animais js-scroll" id="animais">
       <h1 class="titulo">Animais Fantásticos</h1>
-      <ul class="animais-lista">
+      <ul class="animais-lista js-tabmenu">
         <li>
           <img src="img/imagem1.jpg" />
         </li>
@@ -41,7 +44,7 @@
           <img src="img/imagem6.jpg" />
         </li>
       </ul>
-      <div class="animais-descricao">
+      <div class="animais-descricao js-tabcontent">
         <section>
           <h2>Cervo</h2>
           <p>
@@ -127,15 +130,6 @@
             seja, alimenta-se de carne em decomposição. Frutas e grãos compõem
             sua alimentação no outono.
           </p>
-
-          <p>
-            A reprodução ocorre uma vez ao ano. Apesar de o cio durar
-            aproximadamente 3 semanas, a fêmea só é receptiva as investidas do
-            macho por 3 dias. Nem todas as fêmeas do grupo reproduzem. A
-            gestação dura entre 49 a 55 dias. O parto ocorre em cavernas ou na
-            própria toca, sendo que às vezes a mesma toca é utilizada por
-            diversas gerações.
-          </p>
         </section>
 
         <section>
@@ -155,20 +149,6 @@
             garras estão sempre expostas, diferente dos felinos, e podem
             alcançar 70 km/h quando caçam. Possuem glândulas odoríferas entre
             seus dedos, deixando sua marca para outros lobos, por onde passam.
-          </p>
-
-          <p>
-            Seu pelo cumpre uma ótima função de isolamento térmico, por isso nas
-            regiões mais frias a pelagem é mais densa. Seu focinho é
-            caracteristicamente mais comprido e mais largo e possui maior
-            capacidade cerebral do que os outros canídeos. Têm uma glândula
-            supra caudal. Sua dentição é especializada para quebrar ossos, têm
-            uma audição aguçada e a visão noturna com capacidade acima dos
-            outros canídeos. Vivem em grupos que variam de 2 a 36 indivíduos,
-            conforme a disponibilidade de alimento e tamanho do território. Um
-            casal alfa lidera a alcateia e existe toda uma hierarquia, onde os
-            mais altos dela comem primeiro. Se o macho alfa morre, um beta
-            assume
           </p>
 
           <p>
@@ -207,13 +187,6 @@
             fazem parte do seu habitat e assim podem se esconder para atacar à
             presa
           </p>
-
-          <p>
-            Durante o período de reprodução as fêmeas atraem seus parceiros
-            emitindo um forte rugido. A duração dos períodos de gestação varia
-            segundo as espécies, mas de maneira geral a gestação dura de 100 a
-            108 dias, geralmente de 2 a 5 filhotes por ano
-          </p>
         </section>
 
         <section>
@@ -247,20 +220,12 @@
             como nem sempre se alimentam, chegam a comer 30 kg de uma vez só,
             por garantia.
           </p>
-
-          <p>
-            Possuem dimorfismo sexual, sendo que os machos são maiores e possuem
-            juba (desenvolvem em torno dos três anos de idade). Os machos alfas
-            copulam com as fêmeas do bando, numa média de 2,2 vezes por hora no
-            período de estro. As fêmeas podem entrar no cio em qualquer época do
-            ano, com picos na estação chuvosa
-          </p>
         </section>
       </div>
     </section>
-    <section class="grid-section faq" id="faq">
+    <section class="grid-section faq js-scroll" id="faq">
       <h1 class="titulo">FAQ</h1>
-      <dl class="faq-lista">
+      <dl class="faq-lista js-accordion">
         <dt>Eles são fantásticos?</dt>
         <dd>
           Sim, todos são incríveis e com características únicas.
@@ -272,7 +237,7 @@
       </dl>
     </section>
 
-    <section class="grid-section contato" id="contato">
+    <section class="grid-section contato js-scroll" id="contato">
       <h1 class="titulo">Contato</h1>
       <div class="mapa">
         <img src="img/mapa.png " alt="" />
